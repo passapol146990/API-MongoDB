@@ -103,15 +103,6 @@ const t =  {
 app.get("/",async (req, res)=>{
     res.header("Access-Control-Allow-Origin","*");
     res.status(200).json(data);
-    // const client = await MongoClient.connect('mongodb://localhost:27017/');
-    // const coll = client.db('mydata_shop').collection('shirt');
-    // const cursor = coll.find();
-    // const result = await cursor.toArray();
-    // await client.close();
-    // const client = await MongoClient.connect('mongodb://localhost:27017/');
-    // const collection = client.db("mydata_shop").collection("shirt");
-    // const document = await collection.findOne({ _id: ObjectId("61c99c95231324169396646a") });
-    // res.status(200).json(document);
 })
 
 app.post("/add",async (req, res)=>{
